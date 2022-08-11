@@ -1,91 +1,92 @@
+﻿
 
-# 📔 Day 3
+# 📔 День 3
 
-## Booleans
+## Булевы
 
-A boolean data type represents one of the two values:_true_ or _false_. Boolean value is either true or false. The use of these data types will be clear when you start the comparison operator. Any comparisons return a boolean value which is either true or false.
+Тип данных boolean представляет одно из двух значений: _true_ или _false_. Булево значение является либо истинным, либо ложным. Использование этих типов данных станет понятным, когда вы приступите к работе с оператором сравнения. Любое сравнение возвращает булево значение, которое является либо истиной, либо ложью.
 
-**Example: Boolean Values**
+**Пример: Булевы значения**
 
 ```js
 let isLightOn = true
 let isRaining = false
 let isHungry = false
 let isMarried = true
-let truValue = 4 > 3    // true
-let falseValue = 4 < 3  // false
+let truValue = 4 > 3 // true
+let falseValue = 4 < 3 // false
 ```
 
-We agreed that boolean values are either true or false.
+Мы договорились, что булевы значения бывают либо истинными, либо ложными.
 
-### Truthy values
+### Истинные ценности
 
-- All numbers(positive and negative) are truthy except zero
-- All strings are truthy
-- The boolean true
+- Все числа (положительные и отрицательные) истинны, кроме нуля
+- Все строки правдивы
+- Булева истина
 
-### Falsy values
+### Фальшивые ценности
 
 - 0
 - 0n
-- null
-- undefined
+- нулевой
+- неопределённый
 - NaN
-- the boolean false
-- '', "", ``, empty string
+- булево значение false
+- '', "", ``, пустая строка
 
-It is good to remember those truthy values and falsy values. In later section, we will use them with conditions to make decisions.
+Полезно запомнить эти истинные и ложные значения. В последующем разделе мы будем использовать их вместе с условиями для принятия решений.
 
-## Undefined
+## Неопределено
 
-If we declare a variable and if we do not assign a value, the value will be undefined. In addition to this, if a function is not returning the value, it will be undefined.
+Если мы объявляем переменную и не присваиваем ей значение, то значение будет неопределенным. В дополнение к этому, если функция не возвращает значение, оно будет неопределенным.
 
 ```js
-let firstName
-console.log(firstName) //not defined, because it is not assigned to a value yet
+пусть firstName
+console.log(firstName) //не определено, потому что ему еще не присвоено значение
 ```
 
 ## Null
 
 ```js
 let empty = null
-console.log(empty) // -> null , means no value
+console.log(empty) // -> null, означает отсутствие значения
 ```
 
-## Operators
+## Операторы
 
-### Assignment operators
+### Операторы присваивания
 
-An equal sign in JavaScript is an assignment operator. It uses to assign a variable.
+Знак равенства в JavaScript - это оператор присваивания. Он используется для присвоения переменной.
 
 ```js
 let firstName = 'Asabeneh'
-let country = 'Finland'
+пусть страна = 'Финляндия'
 ```
 
-Assignment Operators
+Операторы присваивания
 
-![Assignment operators](../images/assignment_operators.png)
+![Операторы присваивания](../images/assignment_operators.png)
 
-### Arithmetic Operators
+### Арифметические операторы
 
-Arithmetic operators are mathematical operators.
+Арифметические операторы - это математические операторы.
 
-- Addition(+): a + b
-- Subtraction(-): a - b
-- Multiplication(*): a * b
-- Division(/): a / b
-- Modulus(%): a % b
-- Exponential(**): a ** b
+- Сложение (+): a + b
+- Вычитание (-): a - b
+- Умножение (*): a * b
+- Деление (/): a / b
+- Модуль упругости (%): a % b
+- Экспоненциальный (**): a ** b
 
 ```js
-let numOne = 4
-let numTwo = 3
-let sum = numOne + numTwo
+пусть numOne = 4
+пусть numTwo = 3
+пусть sum = numOne + numTwo
 let diff = numOne - numTwo
 let mult = numOne * numTwo
 let div = numOne / numTwo
-let remainder = numOne % numTwo
+пусть остаток = numOne % numTwo
 let powerOf = numOne ** numTwo
 
 console.log(sum, diff, mult, div, remainder, powerOf) // 7,1,12,1.33,1, 64
@@ -94,371 +95,371 @@ console.log(sum, diff, mult, div, remainder, powerOf) // 7,1,12,1.33,1, 64
 
 ```js
 const PI = 3.14
-let radius = 100          // length in meter
+let radius = 100 // длина в метрах
 
-//Let us calculate area of a circle
-const areaOfCircle = PI * radius * radius
-console.log(areaOfCircle)  //  314 m
-
-
-const gravity = 9.81      // in m/s2
-let mass = 72             // in Kilogram
-
-// Let us calculate weight of an object
-const weight = mass * gravity
-console.log(weight)        // 706.32 N(Newton)
-
-const boilingPoint = 100  // temperature in oC, boiling point of water
-const bodyTemp = 37       // body temperature in oC
+//Вычислим площадь круга
+const ПлощадьОкружности = PI * радиус * радиус
+console.log(areaOfCircle) // 314 м
 
 
-// Concatenating string with numbers using string interpolation
+const гравитация = 9,81 // в м/с2
+let mass = 72 // в килограммах
+
+// Давайте вычислим вес объекта
+const вес = масса * гравитация
+console.log(weight) // 706,32 Н (Ньютон)
+
+const boilingPoint = 100 // температура в oC, температура кипения воды
+const bodyTemp = 37 // температура тела в oC
+
+
+// Конкатенация строки с числами с помощью интерполяции строк
 /*
- The boiling point of water is 100 oC.
- Human body temperature is 37 oC.
- The gravity of earth is 9.81 m/s2.
+ Температура кипения воды составляет 100 oC.
+ Температура тела человека составляет 37 oC.
+ Сила тяжести Земли равна 9,81 м/с2.
  */
 console.log(
-  `The boiling point of water is ${boilingPoint} oC.\nHuman body temperature is ${bodyTemp} oC.\nThe gravity of earth is ${gravity} m / s2.`
+  ``Точка кипения воды - ${boilingPoint} oC.\nТемпература человеческого тела - ${bodyTemp} oC.\nГравитация Земли - ${gravity} m / s2.``
 )
 ```
 
-### Comparison Operators
+### Операторы сравнения
 
-In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+В программировании мы сравниваем значения, мы используем операторы сравнения для сравнения двух значений. Мы проверяем, больше, меньше или равно ли значение другому значению.
 
-![Comparison Operators](../images/comparison_operators.png)
-**Example: Comparison Operators**
+![Операторы сравнения](../images/comparison_operators.png)
+**Пример: Операторы сравнения**
 
 ```js
-console.log(3 > 2)              // true, because 3 is greater than 2
-console.log(3 >= 2)             // true, because 3 is greater than 2
-console.log(3 < 2)              // false,  because 3 is greater than 2
-console.log(2 < 3)              // true, because 2 is less than 3
-console.log(2 <= 3)             // true, because 2 is less than 3
-console.log(3 == 2)             // false, because 3 is not equal to 2
-console.log(3 != 2)             // true, because 3 is not equal to 2
-console.log(3 == '3')           // true, compare only value
-console.log(3 === '3')          // false, compare both value and data type
-console.log(3 !== '3')          // true, compare both value and data type
-console.log(3 != 3)             // false, compare only value
-console.log(3 !== 3)            // false, compare both value and data type
-console.log(0 == false)         // true, equivalent
-console.log(0 === false)        // false, not exactly the same
-console.log(0 == '')            // true, equivalent
-console.log(0 == ' ')           // true, equivalent
-console.log(0 === '')           // false, not exactly the same
-console.log(1 == true)          // true, equivalent
-console.log(1 === true)         // false, not exactly the same
-console.log(undefined == null)  // true
+console.log(3 > 2) // true, потому что 3 больше 2
+console.log(3 >= 2) // true, потому что 3 больше 2
+console.log(3 < 2) // false, потому что 3 больше 2
+console.log(2 < 3) // true, потому что 2 меньше 3
+console.log(2 <= 3) // true, потому что 2 меньше 3
+console.log(3 == 2) // false, потому что 3 не равно 2
+console.log(3 != 2) // true, потому что 3 не равно 2
+console.log(3 == '3') // true, сравнивается только значение
+console.log(3 === '3') // false, сравниваем значение и тип данных
+console.log(3 !== '3') // истина, сравнение значения и типа данных
+console.log(3 != 3) // false, сравнивается только значение
+console.log(3 !== 3) // false, сравниваем значение и тип данных
+console.log(0 == false) // true, эквивалент
+console.log(0 === false) // false, не совсем то же самое
+console.log(0 == '') // true, эквивалент
+console.log(0 == ' ') // true, эквивалент
+console.log(0 === '') // false, не совсем то же самое
+console.log(1 == true) // true, эквивалент
+console.log(1 === true) // false, не совсем то же самое
+console.log(undefined == null) // true
 console.log(undefined === null) // false
-console.log(NaN == NaN)         // false, not equal
-console.log(NaN === NaN)        // false
-console.log(typeof NaN)         // number
+console.log(NaN == NaN) // false, не равно
+console.log(NaN === NaN) // false
+console.log(typeof NaN) // число
 
-console.log('mango'.length == 'avocado'.length)  // false
-console.log('mango'.length != 'avocado'.length)  // true
-console.log('mango'.length < 'avocado'.length)   // true
-console.log('milk'.length == 'meat'.length)      // true
-console.log('milk'.length != 'meat'.length)      // false
-console.log('tomato'.length == 'potato'.length)  // true
-console.log('python'.length > 'dragon'.length)   // false
+console.log('mango'.length == 'avocado'.length) // false
+console.log('mango'.length != 'avocado'.length) // true
+console.log('mango'.length < 'avocado'.length) // true
+console.log('milk'.length == 'meat'.length) // true
+console.log('milk'.length != 'meat'.length) // false
+console.log('tomato'.length == 'potato'.length) // true
+console.log('python'.length > 'dragon'.length) // false
 ```
 
-Try to understand the above comparisons with some logic. Remembering without any logic might be difficult.
-JavaScript is some how a wired kind of programming language. JavaScript code run and give you a result but unless you are good at it may not be the desired result.
+Постарайтесь понять приведенные выше сравнения с определенной логикой. Запоминание без логики может оказаться трудным.
+JavaScript - это в некотором роде проводной язык программирования. Код JavaScript выполняется и выдает результат, но если вы не разбираетесь в нем, результат может быть не таким, как хотелось бы.
 
-As rule of thumb, if a value is not true with == it will not be equal with ===. Using === is safer than using ==. The following [link](https://dorey.github.io/JavaScript-Equality-Table/) has an exhaustive list of comparison of data types.
+Как правило, если значение не истинно при ==, оно не будет равно ===. Использование === более безопасно, чем использование ==. Следующая [ссылка](https://dorey.github.io/JavaScript-Equality-Table/) содержит исчерпывающий список сравнения типов данных.
 
-### Logical Operators
+### Логические операторы
 
-The following symbols are the common logical operators:
-&&(ampersand) , ||(pipe) and !(negation).
-The && operator gets true only if the two operands are true.
-The || operator gets true either of the operand is true.
-The ! operator negates true to false and false to true.
+Следующие символы являются общими логическими операторами:
+&&(амперсанд), ||(труба) и !(отрицание).
+Оператор && становится истинным только в том случае, если оба операнда истинны.
+Оператор || получает истину в любом случае, если операнд истинен.
+Оператор ! отрицает истину от ложного и ложное от истинного.
 
 ```js
-// && ampersand operator example
+// пример оператора && ampersand
 
-const check = 4 > 3 && 10 > 5         // true && true -> true
-const check = 4 > 3 && 10 < 5         // true && false -> false
-const check = 4 < 3 && 10 < 5         // false && false -> false
+const check = 4 > 3 && 10 > 5 // true && true -> true
+const check = 4 > 3 && 10 < 5 // true && false -> false
+const check = 4 < 3 && 10 < 5 // false && false -> false
 
-// || pipe or operator, example
+// || труба или оператор, пример
 
-const check = 4 > 3 || 10 > 5         // true  || true -> true
-const check = 4 > 3 || 10 < 5         // true  || false -> true
-const check = 4 < 3 || 10 < 5         // false || false -> false
+const check = 4 > 3 || 10 > 5 // true || true -> true
+const check = 4 > 3 || 10 < 5 // true || false -> true
+const check = 4 < 3 || 10 < 5 // false || false -> false
 
-//! Negation examples
+//! Примеры отрицания
 
-let check = 4 > 3                     // true
-let check = !(4 > 3)                  //  false
+let check = 4 > 3 // true
+let check = !(4 > 3) // false
 let isLightOn = true
-let isLightOff = !isLightOn           // false
-let isMarried = !false                // true
+let isLightOff = !isLightOn // false
+let isMarried = !false // true
 ```
 
-### Increment Operator
+### Оператор инкремента
 
-In JavaScrip we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them:
+В JavaScrip мы используем оператор инкремента для увеличения значения, хранящегося в переменной. Инкремент может быть предварительным или последующим. Давайте рассмотрим каждый из них:
 
-1. Pre-increment
+1. Предварительное увеличение
 
 ```js
-let count = 0
-console.log(++count)        // 1
-console.log(count)          // 1
+пусть count = 0
+console.log(++count) // 1
+console.log(count) // 1
 ```
 
-1. Post-increment
+1. Пост-инкремент
 
 ```js
-let count = 0
-console.log(count++)        // 0
-console.log(count)          // 1
+пусть count = 0
+console.log(count++) // 0
+console.log(count) // 1
 ```
 
-We use most of the time post-increment. At least you should remember how to use post-increment operator.
+Чаще всего мы используем оператор post-increment. По крайней мере, вы должны помнить, как использовать оператор post-increment.
 
-### Decrement Operator
+### Оператор уменьшения
 
-In JavaScrip we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement. Let us see each of them:
+В JavaScrip мы используем оператор декремента для уменьшения значения, хранящегося в переменной. Декременты могут быть пре- или постдекрементными. Давайте рассмотрим каждый из них:
 
-1. Pre-decrement
+1. Предварительный декремент
 
 ```js
-let count = 0
+пусть count = 0
 console.log(--count) // -1
-console.log(count)  // -1
+console.log(count) // -1
 ```
 
-2. Post-decrement
+2. Пост-декрет
 
 ```js
-let count = 0
+пусть count = 0
 console.log(count--) // 0
-console.log(count)   // -1
+console.log(count) // -1
 ```
 
-### Ternary Operators
+### Тернарные операторы
 
-Ternary operator allows to write a condition.
-Another way to write conditionals is using ternary operators. Look at the following examples:
+Тернарный оператор позволяет записать условие.
+Другой способ записи условий - использование троичных операторов. Посмотрите на следующие примеры:
 
 ```js
 let isRaining = true
 isRaining
-  ? console.log('You need a rain coat.')
-  : console.log('No need for a rain coat.')
+  ? console.log('Вам нужен плащ').
+  : console.log('Плащ не нужен').
 isRaining = false
 
 isRaining
-  ? console.log('You need a rain coat.')
-  : console.log('No need for a rain coat.')
+  ? console.log('Вам нужен плащ').
+  : console.log('Плащ не нужен').
 ```
 
 ```sh
-You need a rain coat.
-No need for a rain coat.
+Вам нужен дождевик.
+Нет необходимости в дождевике.
 ```
 
 ```js
-let number = 5
-number > 0
-  ? console.log(`${number} is a positive number`)
-  : console.log(`${number} is a negative number`)
-number = -5
+пусть число = 5
+число > 0
+  ? console.log(`${number} - положительное число`)
+  : console.log(`${number} - отрицательное число`)
+число = -5
 
-number > 0
-  ? console.log(`${number} is a positive number`)
-  : console.log(`${number} is a negative number`)
+число > 0
+  ? console.log(`${number} - положительное число`)
+  : console.log(`${number} - отрицательное число`)
 ```
 
 ```sh
-5 is a positive number
--5 is a negative number
+5 - положительное число
+-5 - отрицательное число
 ```
 
-### Operator Precendence
+### Предварительная оценка оператора
 
-I would like to recommend you to read about operator precendence from this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+Я хотел бы порекомендовать вам прочитать о преценденте оператора по этой [ссылке](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-## Window Methods
+## Оконные методы
 
-### Window alert() method
+### Метод alert() окна
 
-As you have seen at very beginning alert() method displays an alert box with a specified message and an OK button. It is a builtin method and it takes on argument.
-
-```js
-alert(message)
-```
+Как вы видели в самом начале, метод alert() выводит окно предупреждения с заданным сообщением и кнопкой OK. Это встроенный метод, который принимает один аргумент.
 
 ```js
-alert('Welcome to 30DaysOfJavaScript')
-```
-
-Do not use too much alert because it is destructing and annoying, use it just to test.
-
-### Window prompt() method
-
-The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() method takes two arguments. The second argument is optional.
-
-```js
-prompt('required text', 'optional text')
+предупреждение(сообщение)
 ```
 
 ```js
-let number = prompt('Enter number', 'number goes here')
+alert('Добро пожаловать на 30DaysOfJavaScript')
+```
+
+Не используйте слишком много предупреждений, потому что они разрушают и раздражают, используйте их только для проверки.
+
+### Метод Window prompt()
+
+Методы подсказки окна выводят на экран браузера окно подсказки с вводом для принятия входных значений, при этом входные данные могут быть сохранены в переменной. Метод prompt() принимает два аргумента. Второй аргумент является необязательным.
+
+```js
+prompt('обязательный текст', 'необязательный текст')
+```
+
+```js
+let number = prompt('Введите число', 'число здесь')
 console.log(number)
 ```
 
-### Window confirm() method
+### Метод подтверждения окна confirm()
 
-The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.
-A confirm box is often used to ask permission from a user to execute something. Window confirm() takes a string as an argument.
-Clicking the OK yields true value, whereas clicking the Cancel button yields false value.
+Метод confirm() выводит диалоговое окно с заданным сообщением, а также кнопки OK и Cancel.
+Окно подтверждения часто используется для запроса разрешения у пользователя на выполнение какого-либо действия. Окно confirm() принимает в качестве аргумента строку.
+Нажатие кнопки OK дает истинное значение, в то время как нажатие кнопки Cancel дает ложное значение.
 
 ```js
-const agree = confirm('Are you sure you like to delete? ')
-console.log(agree) // result will be true or false based on what you click on the dialog box
+const agree = confirm('Вы уверены, что хотите удалить? ')
+console.log(agree) // результат будет true или false в зависимости от того, что вы нажмете в диалоговом окне
 ```
 
-These are not all the window methods we will have a separate section to go deep into window methods.
+Это не все методы работы с окнами, для углубленного изучения методов работы с окнами у нас будет отдельный раздел.
 
-## Date Object
+## Дата Объект
 
-Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.The methods we use to get date and time information from a date object values are started with a word _get_ because it provide the information.
+Время - важная вещь. Мы хотим знать, когда происходит определенное действие или событие. В JavaScript текущее время и дата создаются с помощью объекта JavaScript Date. Объект, который мы создаем с помощью объекта Date, предоставляет множество методов для работы с датой и временем. Методы, которые мы используем для получения информации о дате и времени из значений объекта Date, начинаются со слова _get_, потому что они предоставляют информацию.
 _getFullYear(), getMonths(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()_
 
 ![Date time Object](../images/date_time_object.png)
 
-### Creating a time object
+### Создание объекта времени
 
-Once we create time object. The time object will provide information about time. Let us create a time object
-
-```js
-const now = new Date()
-console.log(now) // Sat Jan 04 2020 00:56:41 GMT+0200 (Eastern European Standard Time)
-```
-
-We have created a time object and we can access any date time information from the object using the get methods we have mentioned on the table.
-
-### Getting full year
-
-Let's extract or get the full year from a time object.
+Как только мы создадим объект time. Объект time будет предоставлять информацию о времени. Давайте создадим объект времени
 
 ```js
 const now = new Date()
-console.log(now.getFullYear()) // 2020
+console.log(now) // Sat Jan 04 2020 00:56:41 GMT+0200 (восточноевропейское стандартное время)
 ```
 
-### Getting month
+Мы создали объект time и можем получить доступ к любой информации о дате-времени из объекта, используя методы get, которые мы указали в таблице.
 
-Let's extract or get the month from a time object.
+### Получение полного года
+
+Давайте извлечем или получим полный год из объекта времени.
 
 ```js
 const now = new Date()
-console.log(now.getMonth()) // 0, because the month is January,  month(0-11)
+console.log(now.getFullYear()) // 2020 год
 ```
 
-### Getting date
+### Получение месяца
 
-Let's extract or get the date of the month from a time object.
+Давайте извлечем или получим месяц из объекта времени.
 
 ```js
 const now = new Date()
-console.log(now.getDate()) // 4, because the day of the month is 4th,  day(1-31)
+console.log(now.getMonth()) // 0, потому что месяц - январь, month(0-11)
 ```
 
-### Getting day
+### Дата получения
 
-Let's extract or get the day of the week from a time object.
+Давайте извлечем или получим дату месяца из объекта time.
 
 ```js
 const now = new Date()
-console.log(now.getDay()) // 6, because the day is Saturday which is the 7th day
-//  Sunday is 0, Monday is 1 and Saturday is 6
-// Getting the weekday as a number (0-6)
+console.log(now.getDate()) // 4, потому что день месяца равен 4, day(1-31)
 ```
 
-### Getting hours
+### Получение дня
 
-Let's extract or get the hours from a time object.
+Давайте извлечем или получим день недели из объекта времени.
 
 ```js
 const now = new Date()
-console.log(now.getHours()) // 0, because the time is 00:56:41
+console.log(now.getDay()) // 6, потому что день - суббота, которая является 7-м днем
+// воскресенье - 0, понедельник - 1 и суббота - 6
+// Получение дня недели в виде числа (0-6)
 ```
 
-### Getting minutes
+### Получение часов
 
-Let's extract or get the minutes from a time object.
+Давайте извлечем или получим часы из объекта времени.
 
 ```js
 const now = new Date()
-console.log(now.getMinutes()) // 56, because the time is 00:56:41
+console.log(now.getHours()) // 0, потому что время 00:56:41
 ```
 
-### Getting seconds
+### Получение минут
 
-Let's extract or get the seconds from a time object.
+Давайте извлечем или получим минуты из объекта времени.
 
 ```js
 const now = new Date()
-console.log(now.getSeconds()) // 41, because the time is 00:56:41
+console.log(now.getMinutes()) // 56, потому что время 00:56:41
 ```
 
-### Getting time
+### Получение секунд
 
-This method give time in milliseconds starting from January 1, 1970. It is also know as Unix time. We can get the unix time in two ways:
+Давайте извлечем или получим секунды из объекта времени.
 
-1. Using _getTime()_
+```js
+const now = new Date()
+console.log(now.getSeconds()) // 41, потому что время 00:56:41
+```
+
+### Получение времени
+
+Этот метод дает время в миллисекундах, начиная с 1 января 1970 года. Это время также известно как время Unix. Мы можем получить время Unix двумя способами:
+
+1. Использование _getTime()_
 
 ```js
 const now = new Date() //
-console.log(now.getTime()) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
+console.log(now.getTime()) // 1578092201341, это количество секунд, прошедших с 1 января 1970 года до 4 января 2020 года 00:56:41
 ```
 
-1. Using _Date.now()_
+1. Использование _Date.now()_
 
 ```js
 const allSeconds = Date.now() //
-console.log(allSeconds) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
+console.log(allSeconds) // 1578092201341, это количество секунд, прошедших с 1 января 1970 года по 4 января 2020 года 00:56:41
 
 const timeInSeconds = new Date().getTime()
 console.log(allSeconds == timeInSeconds) // true
 ```
 
-Let us format these values to a human readable time format.
-**Example:**
+Давайте отформатируем эти значения в человекочитаемый формат времени.
+**Пример:**
 
 ```js
 const now = new Date()
 const year = now.getFullYear() // return year
 const month = now.getMonth() + 1 // return month(0 - 11)
-const date = now.getDate() // return date (1 - 31)
-const hours = now.getHours() // return number (0 - 23)
-const minutes = now.getMinutes() // return number (0 -59)
+const date = now.getDate() // возвращаем дату (1 - 31)
+const hours = now.getHours() // возвращаем число (0 - 23)
+const minutes = now.getMinutes() // возвращаемое число (0 -59)
 
-console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
+console.log(`${дата}/${месяц}/${год} ${часы}:${минуты}`) // 4/1/2020 0:56
 ```
 
-🌕  You have boundless energy. You have just completed day 3 challenges and you are three steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
+🌕 У вас безграничная энергия. Вы только что завершили третий день испытаний и уже на три шага впереди на пути к величию. Теперь сделайте несколько упражнений для мозга и для мышц.
 
-## 💻 Day 3: Exercises
+## 💻 День 3: Упражнения
 
-### Exercises: Level 1
+### Упражнения: Уровень 1
 
-1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
-2. Check if type of '10' is equal to 10
-3. Check if parseInt('9.8') is equal to 10
-4. Boolean value is either true or false.
-   1. Write three JavaScript statement which provide truthy value.
-   2. Write three JavaScript statement which provide falsy value.
+1. Объявите переменные firstName, lastName, country, city, age, isMarried, year и присвойте им значение, а также используйте оператор typeof для проверки различных типов данных.
+2. Проверьте, равен ли тип '10' 10
+3. Проверьте, равен ли parseInt('9.8') 10
+4. Булево значение - это либо true, либо false.
+   1. Напишите три утверждения JavaScript, которые обеспечивают истинностное значение.
+   2. Напишите три оператора JavaScript, которые предоставляют ложное значение.
 
-5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
+5. Определите результат следующего выражения сравнения сначала без использования console.log(). После того как вы определите результат, подтвердите его с помощью console.log()
    1. 4 > 3
    2. 4 >= 3
    3. 4 < 3
@@ -470,9 +471,9 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    9. 4 != '4'
    10. 4 == '4'
    11. 4 === '4'
-   12. Find the length of python and jargon and make a falsy comparison statement.
+   12. Найдите длину питона и жаргона и составьте фальшивое сравнительное высказывание.
 
-6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+6. Определите результат следующих выражений сначала без использования console.log(). После того как вы определите результат, подтвердите его с помощью console.log()
    1. 4 > 3 && 10 < 12
    2. 4 > 3 && 10 > 12
    3. 4 > 3 || 10 < 12
@@ -483,13 +484,13 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    8. !(4 > 3 && 10 < 12)
    9. !(4 > 3 && 10 > 12)
    10. !(4 === '4')
-   11. There is no 'on' in both dragon and python
+   11. Как в dragon, так и в python нет "on".
 
-7. Use the Date object to do the following activities
-   1. What is the year today?
-   2. What is the month today as a number?
-   3. What is the date today?
-   4. What is the day today as a number?
-   5. What is the hours now?
-   6. What is the minutes now?
-   7. Find out the numbers of seconds elapsed from January 1, 1970 to now.
+7. Используйте объект Date для выполнения следующих действий
+   1. Какой сегодня год?
+   2. Какой сегодня месяц в виде числа?
+   3. Какая сегодня дата?
+   4. Какой сегодня день в виде числа?
+   5. Каковы сейчас часы?
+   6. Каков сейчас протокол?
+   7. Найдите количество секунд, прошедших с 1 января 1970 года до настоящего времени.
